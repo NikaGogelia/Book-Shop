@@ -88,7 +88,7 @@ main.innerHTML = `
 `;
 
 // Fetch Data From JSON File
-fetchData("https://nikagogelia.github.io/Book-Shop/data/data.json").then(res => res.json()).then((res) => {
+fetch("https://nikagogelia.github.io/Book-Shop/data/data.json").then(res => res.json()).then((res) => {
   data = res;
   renderBooks(data);
 });
