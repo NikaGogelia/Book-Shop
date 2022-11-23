@@ -104,12 +104,7 @@ main.innerHTML = `
 `;
 
 // Fetch Data From JSON File
-// fetchData("../data/data.json").then((res) => {
-//   data = res;
-//   renderBooks(data);
-// });
-
-fetchData("https://nikagogelia.github.io/data/data.json").then((res) => {
+fetchData("../data/data.json").then((res) => {
   data = res;
   renderBooks(data);
 });
