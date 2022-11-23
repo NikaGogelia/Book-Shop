@@ -7,22 +7,6 @@ const main = document.querySelector("main");
 let data = [];
 let cartItems = [];
 
-// Fetch Data Function
-const fetchData = async (endpoint) => {
-  try {
-    const response = await fetch(endpoint);
-    if (!response.ok) {
-      const message = `Error Occurred: Page Not Found ${response.status}`;
-      throw new Error(message);
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error);
-    main.innerHTML = `<h1>${error}</h1>`;
-  }
-};
-
 // ------------------------ Header Block ------------------------ //
 header.innerHTML = `
 <div>
@@ -104,7 +88,7 @@ main.innerHTML = `
 `;
 
 // Fetch Data From JSON File
-fetchData("https://nikagogelia.github.io/Book-Shop/data/data.json").then((res) => {
+fetchData("https://nikagogelia.github.io/Book-Shop/data/data.json").then(res => res.json()).then((res) => {
   data = res;
   renderBooks(data);
 });
@@ -318,5 +302,5 @@ const modalToggle = (index) => {
 
 // Confirm Order Button
 confirmOrderButton.addEventListener("click", () => {
-  location.href = "../pages/confirm-order.html";
+  location.href = "https://nikagogelia.github.io/Book-Shop/pages/confirm-order.html";
 });
