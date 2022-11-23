@@ -9,7 +9,7 @@ const modalTitle = document.querySelector(".modal-title");
 const back = document.querySelector(".back-to-books");
 
 back.addEventListener("click", () => {
-  location.href = "../index.html";
+  location.href = "https://nikagogelia.github.io/Book-Shop/index.html";
 });
 
 const modalToggle = () => {
