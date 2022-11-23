@@ -1,0 +1,89 @@
+@media only screen and (min-width: 1024px) {
+  body > * {
+    padding: 0 10em;
+  }
+
+  /* Header */
+  .navbar {
+    padding: 2em 0 !important;
+  }
+
+  .nav-brand > i {
+    font-size: 2.5em;
+  }
+
+  .banner-div > h1 {
+    font-size: 5em;
+    width: 10em;
+  }
+
+  /* Main */
+  .header {
+    padding: 2em 1em;
+  }
+
+  .mini-cart {
+    right: 11em;
+    width: 30em;
+    padding: 0 1em;
+  }
+
+  .open-cart {
+    height: 30em;
+    padding: 1em;
+  }
+
+  .mini-cart-attributes {
+    padding: 1em;
+  }
+
+  .cart-button {
+    padding: 1.2em;
+  }
+
+  .cart-button > p {
+    font-size: 1.2em;
+  }
+
+  .cart-items-number-div {
+    margin-left: 0.8em;
+  }
+
+  .cart-items-number-div > i {
+    font-size: 1.5em;
+  }
+
+  .cart-items-number {
+    bottom: 2em;
+    right: -1.5em;
+    width: 20px;
+    height: 20px;
+    font-size: 0.65em;
+  }
+
+  .cart-item {
+    margin-bottom: 1em;
+    padding: 0.8em 0;
+  }
+
+  .cart-item > * {
+    margin: 0 0.5em;
+  }
+
+  .cart-item > img {
+    width: 4em;
+    height: 5em;
+  }
+
+  .cart-item > div {
+    margin: 0 1em;
+    width: 80%;
+  }
+
+  .cart-item > div > h6 {
+    font-size: 0.8em;
+    width: 70%;
+  }
+
+  /* Forms */
+}

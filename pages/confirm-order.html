@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop || Confirm Order</title>
+    <!-- FontAwesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/48699ff6ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="../styles/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/index.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/desktop.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/tablet.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/mobile.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <i class="fa-solid fa-book-open"></i>
+          <button class="back-to-books">Back To Book Catalog</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>confirm Order</h1>
+      <div class="confirm-order-form">
+        <form>
+          <div>
+            <label for="name">Name*</label>
+            <input type="text" id="name" placeholder="Enter Your Name" />
+            <p class="invalid-field">The Field Is Invalid</p>
+          </div>
+          <div>
+            <label for="surname">Surname*</label>
+            <input type="text" id="surname" placeholder="Enter Your Surname" />
+            <p class="invalid-field">The Field Is Invalid</p>
+          </div>
+          <div>
+            <label for="date">Delivery Date*</label>
+            <input type="date" id="date" />
+            <p class="invalid-field">The Field Is Invalid</p>
+          </div>
+          <div>
+            <label for="street">Street*</label>
+            <input
+              type="text"
+              id="street"
+              placeholder="Enter Your Street Address"
+            />
+            <p class="invalid-field">The Field Is Invalid</p>
+          </div>
+          <div>
+            <label for="house-number">House Number*</label>
+            <input
+              type="text"
+              id="house-number"
+              placeholder="Enter Your House Number"
+            />
+            <p class="invalid-field">The Field Is Invalid</p>
+          </div>
+          <div>
+            <label for="falt-number">Flat Number*</label>
+            <input
+              type="text"
+              id="flat-number"
+              placeholder="Enter Your Flat Number"
+            />
+            <p class="invalid-field">The Field Is Invalid</p>
+          </div>
+          <div class="purchase-type">
+            <div>
+              <label for="cash">Cash</label>
+              <input type="radio" name="radio" id="cash" checked />
+            </div>
+            <div>
+              <label for="card">Card</label>
+              <input type="radio" name="radio" id="card" />
+            </div>
+          </div>
+          <div class="checkboxes">
+            <div>
+              <label for="gift">Pack As A Gift</label>
+              <input type="checkbox" id="gift" />
+            </div>
+            <div>
+              <label for="postcard">Add PostCard</label>
+              <input type="checkbox" id="postcard" />
+            </div>
+            <div>
+              <label for="discount">Provide 2% Discount To The Next Time</label>
+              <input type="checkbox" id="discount" />
+            </div>
+            <div>
+              <label for="pen-pencil">Branded Pen Or Pencil</label>
+              <input type="checkbox" id="pen-pencil" />
+            </div>
+          </div>
+          <button type="submit" onclick="modalToggle()">Complete</button>
+        </form>
+      </div>
+      <div class="modal modal-form">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title">Order Completed</h1>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button class="close" onclick="modalToggle()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript Source -->
+    <script src="../js/confirmOrder.js" type="text/javascript"></script>
+  </body>
+</html>
