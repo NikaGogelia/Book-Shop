@@ -40,14 +40,14 @@ setInterval(
       if (input.value.length > 0) {
         switch (input.id) {
           case "name":
-            if (input.value.length > 4 && isNaN(input.value)) {
+            if (input.value.length >= 4 && isNaN(input.value)) {
               invalid[0].classList.remove("invalid");
             } else {
               invalid[0].classList.add("invalid");
             }
             break;
           case "surname":
-            if (input.value.length > 5 && isNaN(input.value)) {
+            if (input.value.length >= 5 && isNaN(input.value)) {
               invalid[1].classList.remove("invalid");
             } else {
               invalid[1].classList.add("invalid");
